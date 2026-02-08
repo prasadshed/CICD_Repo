@@ -34,6 +34,7 @@ jobs:
       with:
         image: prasadshed/springboot-image-new
         tags: latest
+        registry: index.docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
