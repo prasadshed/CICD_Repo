@@ -14,7 +14,10 @@ public class PspringApplication {
 	public String welcome(@PathVariable int id) {
 		return "Hello welcome"+ id;
 	}
-
+	@GetMapping("/welcome{name}")
+	public String welcome(@PathVariable String name) {
+		return "Hello welcome"+ name;
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(PspringApplication.class, args);
 	}
