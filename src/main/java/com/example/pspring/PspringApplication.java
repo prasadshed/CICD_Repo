@@ -20,7 +20,7 @@ public class PspringApplication {
 	}
 	@GetMapping("/welcome{dou}")
 	public String welcome2(@PathVariable Double dou) {
-		return "Hello welcome"+ dou;
+		return "Hello welcome"+ dou;   /////returning hello welcome statement
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(PspringApplication.class, args);
